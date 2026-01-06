@@ -1,28 +1,22 @@
 * {
-    padding: 0px;
-    margin: 0px
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-/* navbar container */
+/* Navbar container */
 #nav-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 10px;
-    background-color: rgba(10, 10, 10, 0.8)
+    padding: 16px 20px;
+    position: relative;
+    background-color: rgba(10,10,10,0.9);
+    z-index: 1000;
+    font-family: 'Lato', sans-serif;
 }
-/* only show mobile and table */
-.menu-icon{
-    display:none
-}
- .logo-container{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        width: 100%;
-    }
-/* navbar logo */
+
+/* Logo */
 .logo {
     color: red;
     font-size: 26px;
@@ -34,39 +28,80 @@
     font-weight: 900;
 }
 
-/* navigation menu */
+/* Hamburger menu icon - hidden by default */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+/* Desktop nav-menu */
 .nav-menu {
-    color: black;
-    list-style: none;
     display: flex;
-    align-items: center;
-    gap: 20px;
-
-
+    list-style: none;
+    gap: 25px;
 }
 
 .nav-menu li a {
     text-decoration: none;
     font-size: 18px;
-    color: white
+    color: white;
 }
 
-/* search input */
+/* Mobile/Tablet nav-links */
+.nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 6px;
+    top:45px;
+    background-color: rgba(10,10,10,0.9);
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 100;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.nav-links.active {
+    display: block;
+    max-height: 500px; 
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+/* Search Input */
+.search-container {
+    width:100%;
+}
+
 .search-input {
     padding: 8px 10px;
-    border: 1px solid gray;
     border-radius: 6px;
-    width: 200px;
+    border: 1px solid gray;
+    background-color: rgba(10,10,10,0.6);
     color: white;
     font-weight: 500;
-    background-color: rgba(10, 10, 10, 0.6)
+    
 }
 
 .search-input::placeholder {
-    color: rgb(145, 144, 144)
+    color: rgb(145,144,144);
 }
 
 .search-input:focus {
-    border:1px solid white;
-    outline:none;
+    outline: none;
+    border: 1px solid white;
 }

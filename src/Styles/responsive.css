@@ -1,22 +1,66 @@
 /* navbar container */
+/* moblie */
 @media screen and (max-width:576px) {
-   
-    .nav-menu{
-        display:none;
+    .logo-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
-    .menu-icon{
-        display:block;
+
+    .logo {
+        font-size: 22px;
     }
-    #nav-container{
-        flex-direction:column;
-        gap:6px;
+
+    .nav-menu {
+        display: none;
     }
-    .search-conatiner{
-        width:100%;
-        box-sizing:border-box;
+
+    .menu-icon {
+        display: block;
+    }
+
+    #nav-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px
+    }
+
+    .search-conatiner {
+        width: 100%;
+        box-sizing: border-box;
 
     }
+
     .search-input {
-     width:calc(100% - 20px)
+        width: 100%
+    }
+}
+
+/* table */
+@media screen and (min-width:537px) and (max-width:768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        order:1
+    }
+
+    .menu-icon {
+        display: block;
+        order:3
+    }
+   .search-conatiner{
+    order:2
+   }
+    #nav-container {
+
+        justify-content: space-between;
+        border: 2px solid red
     }
 }
