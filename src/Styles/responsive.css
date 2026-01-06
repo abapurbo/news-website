@@ -1,0 +1,22 @@
+/* navbar container */
+@media screen and (max-width:576px) {
+   
+    .nav-menu{
+        display:none;
+    }
+    .menu-icon{
+        display:block;
+    }
+    #nav-container{
+        flex-direction:column;
+        gap:6px;
+    }
+    .search-conatiner{
+        width:100%;
+        box-sizing:border-box;
+
+    }
+    .search-input {
+     width:calc(100% - 20px)
+    }
+}
