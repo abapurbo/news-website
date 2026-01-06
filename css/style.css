@@ -3,6 +3,17 @@
     margin: 0
 }
 
+/* lato font style */
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+}
+
+.playfair-display-font {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 
 /* Navbar container */
 #nav-container {
@@ -100,10 +111,35 @@
 }
 
 
-/* lato font style */
-.lato-thin {
-    font-family: "Lato", sans-serif;
-    font-style: normal;
+
+
+/* banner most popular news section */
+.most-popular-news {
+    display: flex;
+    max-width: 1440px;
+    margin: 30px auto;
+    padding: 0 40px;
+    padding-bottom: 40px;
+    gap: 30px;
+}
+
+.sports-img img {
+    width: 550px;
+    height: 100%;
+    object-position: center;
+}
+
+#popular-news-description {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.category-and-date {
+    font-size:18px;
+    display:flex;
+    gap:16px;
+    color:gray;
+    font-weight:800;
 }
 
 /* Featured news  section css style  */
@@ -141,8 +177,8 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 30px;
-    max-width:1440px;
-    margin:0 auto;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 /* news card style */
@@ -150,8 +186,8 @@
     max-width: 380px;
     background: #ffffff;
     border-radius: 6px;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -197,7 +233,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    flex:1
+    flex: 1
 }
 
 .newsTitle {
