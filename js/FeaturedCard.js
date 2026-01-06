@@ -10,7 +10,7 @@ const getNewsData = async () => {
 function newsCard(news) {
     console.log(news)
     const newsCardContainer = document.getElementById('news-card-container');
-    news.slice(0, 6).forEach(item => {
+    news.slice(0, 8).forEach(item => {
         const cardDiv = document.createElement('div');
         cardDiv.classList.add('news-card');
         cardDiv.innerHTML = `
