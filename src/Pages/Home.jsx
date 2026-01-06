@@ -1,5 +1,10 @@
 import React from "react";
+import FeaturedNews from "../components/News/FeaturedNews";
 
 export default function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <FeaturedNews></FeaturedNews>
+    </div>
+  );
 }

@@ -32,39 +32,41 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav id="nav-container" className="lato-thin">
-      {/* Logo and Menu Icon */}
-      <div className="logo-container">
-        <h1 className="logo">Ajker<span className="nav-logo">Khabar</span></h1>
-        <div className="menu-icon">
-          <svg id="menuSvg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#fff">
-            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-          </svg>
+    <header>
+      <nav id="nav-container" className="lato-thin">
+        {/* Logo and Menu Icon */}
+        <div className="logo-container">
+          <h1 className="logo">Ajker<span className="nav-logo">Khabar</span></h1>
+          <div className="menu-icon">
+            <svg id="menuSvg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#fff">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+          </div>
         </div>
-      </div>
 
-      {/* Mobile/Tablet Navigation */}
-      <div className="nav-links">
-        <ul className="nav-list">
+        {/* Mobile/Tablet Navigation */}
+        <div className="nav-links">
+          <ul className="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">National</a></li>
+            <li><a href="#">International</a></li>
+            <li><a href="#">Sports</a></li>
+          </ul>
+        </div>
+
+        {/* Desktop Navigation */}
+        <ul className="nav-menu">
           <li><a href="#">Home</a></li>
           <li><a href="#">National</a></li>
           <li><a href="#">International</a></li>
           <li><a href="#">Sports</a></li>
         </ul>
-      </div>
 
-      {/* Desktop Navigation */}
-      <ul className="nav-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">National</a></li>
-        <li><a href="#">International</a></li>
-        <li><a href="#">Sports</a></li>
-      </ul>
-
-      {/* Search Input */}
-      <div className="search-container">
-        <input className="search-input" type="text" placeholder="Search news, topics…" />
-      </div>
-    </nav>
+        {/* Search Input */}
+        <div className="search-container">
+          <input className="search-input" type="text" placeholder="Search news, topics…" />
+        </div>
+      </nav>
+    </header>
   );
 }
