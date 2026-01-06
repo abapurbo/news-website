@@ -1,0 +1,262 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+
+/* Navbar container */
+#nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background-color: rgba(10, 10, 10, 0.9);
+    z-index: 1000;
+
+}
+
+/* Logo */
+.logo {
+    color: red;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.nav-logo {
+    color: white;
+    font-weight: 900;
+}
+
+/* Hamburger menu icon - hidden by default */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+/* Desktop nav-menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+/* Mobile/Tablet nav-links */
+.nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 6px;
+    top: 45px;
+    background-color: rgba(10, 10, 10, 0.9);
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 100;
+
+}
+
+.nav-links.active {
+    display: block;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+
+
+.search-input {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    background-color: rgba(10, 10, 10, 0.6);
+    color: white;
+    font-weight: 500;
+
+}
+
+.search-input::placeholder {
+    color: rgb(145, 144, 144);
+}
+
+.search-input:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+
+/* lato font style */
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+}
+
+/* Featured news  section css style  */
+.featured-container {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9
+}
+
+.news-title {
+
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline;
+}
+
+.news-sub-title {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+
+}
+
+/* news card container section */
+#news-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
+    max-width:1440px;
+    margin:0 auto;
+}
+
+/* news card style */
+.news-card {
+    max-width: 380px;
+    background: #ffffff;
+    border-radius: 6px;
+    display:flex;
+    flex-direction:column;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.news-image-wrapper {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.news-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.news-card:hover img {
+    transform: scale(1.08);
+}
+
+/* Badge */
+.news-badge {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    background: #ef5350;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 14px;
+}
+
+/* Body */
+.news-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex:1
+}
+
+.newsTitle {
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #1f2937;
+    text-align: left;
+}
+
+.news-subtitle {
+    font-size: 16px;
+    color: #ef5350;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.news-description {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    text-align: left;
+    flex: 1;
+
+}
+
+
+.read-more-btn {
+    background: #26a69a;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.read-more-btn:hover {
+    background: #1f8f85;
+}
+
+.like-btn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #6b7280;
+}
+
+.like-btn:hover {
+    color: #ef5350;
+}
+
+/* news read button */
+.news-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #9ca3af;
+}
