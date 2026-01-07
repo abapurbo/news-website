@@ -79,3 +79,9 @@ git clone https://github.com/abapurbo/news-website.git
 - **Separation of concerns** – CSS, JS, and HTML are modular for maintainability.  
 - **Dynamic content rendering** – News cards and details are generated from JSON for easy scalability.  
 
+---
+
+## 🚀 Live Demo  
+🔗 **Live Site:** [Visit AjkerKhabar](https://rashed-web-dev.netlify.app)
+
+---

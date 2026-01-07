@@ -1,9 +1,11 @@
 // news cards data
-const getNewsData = async () => {
+const getNewsData = async (category = null) => {
   const res = await fetch('./data/newsData.json');
   const data = await res.json();
-  newsCard(data)
+  //filter category
+  const filteredData = category ? data.filter(item => item.category === category) : data;
 
+  newsCard(filteredData);
 };
 
 //news cards style
@@ -42,5 +44,3 @@ function newsCard(news) {
   });
 
 }
-
-getNewsData()
