@@ -1,0 +1,12 @@
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
+}
+
+.nav-menu a.active {
+    background: #2563eb; /* active bg */
+    border-radius: 6px;
+    color: #fff;
+}

@@ -23,4 +23,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// nav link active functionality
+const navLinks = document.querySelectorAll('.nav-menu a');
+console.log(navLinks)
+// currrent page path
+const currentPath =window.location.pathname.split('/').pop();
+navLinks.forEach(link=>{
+    const linkPath = link.getAttribute('href');
+        if (linkPath === currentPath || (linkPath === 'index.html' && currentPath === '')) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
 
+})
