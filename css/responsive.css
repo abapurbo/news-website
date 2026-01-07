@@ -1,4 +1,3 @@
-/* navbar container */
 /* moblie */
 @media screen and (max-width:576px) {
     .logo-container {
@@ -33,12 +32,47 @@
     }
 
     .search-input {
-        width: 100%
+        width: calc(100% - 20px)
     }
+
+    /* home page bannder news section */
+    .most-popular-news {
+        flex-direction: column;
+        padding: 0 20px
+    }
+
+    .sports-img img {
+        width: 100%;
+    }
+
+    .banner-news-title {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    #popular-news-description {
+        font-size: 18px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .category-and-date {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 9px
+    }
+
+    /* news card container */
+    #news-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px 0px
+    }
+
 }
 
 /* tablet */
-@media screen and (min-width:537px) and (max-width:768px) {
+@media screen and (min-width:472px) and (max-width:768px) {
     .nav-menu {
         display: none;
     }
@@ -76,4 +110,75 @@
         width: 148px;
     }
 
+    /* home page bannder news section */
+    .most-popular-news {
+        flex-direction: column;
+        padding: 0 30px
+    }
+
+    .sports-img img {
+        width: 100%;
+    }
+
+    .banner-news-title {
+        font-size: 26px;
+        text-align: center !important;
+    }
+
+    #popular-news-description {
+        font-size: 18px;
+        text-align: center !important;
+        margin: 20px 0;
+    }
+
+    .category-and-date {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 9px
+    }
+
+    /* news card container */
+    #news-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 30px
+    }
+
+}
+
+
+@media screen and (min-width:820px) and (max-width:1180px) {
+
+   
+}
+@media screen and (min-width:472px) and (max-width:1024px) {
+
+    /* news card container */
+    #news-card-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px 30px
+    }
+    /* banner news section */
+      .banner-news-title {
+        font-size: 20px;
+        text-align: left
+    }
+    #popular-news-description {
+        font-size: 18px;
+        text-align:left;
+        margin: 20px 0;
+    }
+}
+
+/* footer responsive */
+@media (max-width: 992px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
 }

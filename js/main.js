@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // nav link active functionality
-const navLinks = document.querySelectorAll('.nav-menu a');
+const navLinks = document.querySelectorAll('.nav-menu a , .nav-list a');
 console.log(navLinks)
 // currrent page path
 const currentPath =window.location.pathname.split('/').pop();

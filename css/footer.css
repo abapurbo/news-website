@@ -116,11 +116,24 @@
     transition: all 0.3s ease;
 }
 
-.footer-social a.facebook:hover { background: #1877f2; color: #fff; }
-.footer-social a.twitter:hover { background: #1da1f2; color: #fff; }
-.footer-social a.youtube:hover { background: #ff0000; color: #fff; }
+.footer-social a.facebook:hover {
+    background: #1877f2;
+    color: #fff;
+}
 
-.footer-social a:hover { transform: translateY(-4px); }
+.footer-social a.twitter:hover {
+    background: #1da1f2;
+    color: #fff;
+}
+
+.footer-social a.youtube:hover {
+    background: #ff0000;
+    color: #fff;
+}
+
+.footer-social a:hover {
+    transform: translateY(-4px);
+}
 
 /* Bottom */
 .footer-bottom {
@@ -139,5 +152,8 @@
         text-align: center;
         gap: 30px;
     }
-    .footer-social { justify-content: center; }
+
+    .footer-social {
+        justify-content: center;
+    }
 }
