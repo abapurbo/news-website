@@ -82,6 +82,6 @@ git clone https://github.com/abapurbo/news-website.git
 ---
 
 ## 🚀 Live Demo  
-🔗 **Live Site:** [Visit AjkerKhabar](https://rashed-web-dev.netlify.app)
+🔗 **Live Site:** [Visit AjkerKhabar](https://abapurbo.github.io/news-website/)
 
 ---
