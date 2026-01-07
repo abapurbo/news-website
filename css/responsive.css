@@ -99,25 +99,51 @@
     .card-1 {
         order: 2;
     }
-    #card-body-2{
-        bottom:8px;
-        left:8px;
+
+    #card-body-2 {
+        bottom: 8px;
+        left: 8px;
     }
 
     .card-body-title {
-        font-size:12px;
+        font-size: 12px;
     }
-    .card-body-sub-title{
-        font-size:10px;
-        margin-bottom:5px;
+
+    .card-body-sub-title {
+        font-size: 10px;
+        margin-bottom: 5px;
 
     }
-    .categroy-and-date{
-      font-size:10px;
+
+    .categroy-and-date {
+        font-size: 10px;
     }
-    .card-2-date{
-        font-size:10px; 
+
+    .card-2-date {
+        font-size: 10px;
     }
+
+    /* footer section */
+    .footer-container {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        flex-wrap: nowrap;
+        padding: 20px 8px
+    }
+
+    .footer-col {
+        flex: 1;
+        min-width: 220px;
+        text-align: start;
+    }
+
+    .footer-social {
+        justify-content: start;
+        align-items: start;
+        gap: 10px
+    }
+
 
 }
 
@@ -226,9 +252,6 @@
     }
 }
 
-
-@media screen and (min-width:820px) and (max-width:1180px) {}
-
 @media screen and (min-width:472px) and (max-width:1024px) {
 
     /* news card container */
@@ -248,17 +271,9 @@
         text-align: left;
         margin: 20px 0;
     }
-}
 
-/* footer responsive */
-@media (max-width: 992px) {
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
-
-    .footer-social {
-        justify-content: center;
+    /* footer */
+    .newsletter-form {
+        width:fit-content;
     }
 }
