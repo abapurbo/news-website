@@ -1,5 +1,22 @@
 /* moblie */
 @media screen and (max-width:576px) {
+    .news-title {
+        font-size: 20px !important;
+        text-align: center;
+        margin-bottom:10px;
+    }
+
+    .news-sub-title {
+        font-size: 1rem;
+        color: #555;
+        margin-top: 15px;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1;
+        text-align: center;
+
+    }
+
     .logo-container {
         display: flex;
         justify-content: space-between;
@@ -144,6 +161,16 @@
         gap: 10px
     }
 
+    /* latest national update news */
+    .latest-news-grid {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px 0 0 0;
+    }
+
+    .national-latest-section {
+        padding: 30px 20px
+    }
+
 
 }
 
@@ -197,7 +224,7 @@
     }
 
     .banner-news-title {
-        font-size: 26px;
+        font-size: 30px !important;
         text-align: center !important;
     }
 
@@ -224,6 +251,7 @@
     .news-title {
         font-size: 26px;
         text-align: center;
+        margin-bottom:12px;
     }
 
     .news-sub-title {
@@ -274,6 +302,6 @@
 
     /* footer */
     .newsletter-form {
-        width:fit-content;
+        width: fit-content;
     }
 }
