@@ -1,19 +1,19 @@
 // news cards data
 const getNewsData = async () => {
-    const res = await fetch('./data/newsData.json');
-    const data = await res.json();
-    newsCard(data)
+  const res = await fetch('./data/newsData.json');
+  const data = await res.json();
+  newsCard(data)
 
 };
 
 //news cards style
 function newsCard(news) {
-    console.log(news)
-    const newsCardContainer = document.getElementById('news-card-container');
-    news.slice(0, 8).forEach(item => {
-        const cardDiv = document.createElement('div');
-        cardDiv.classList.add('news-card');
-        cardDiv.innerHTML = `
+  console.log(news)
+  const newsCardContainer = document.getElementById('news-card-container');
+  news.slice(0, 8).forEach(item => {
+    const cardDiv = document.createElement('div');
+    cardDiv.classList.add('news-card');
+    cardDiv.innerHTML = `
           <div class="news-image-wrapper">
              <img src="https://i.ibb.co.com/WpDd6ZJV/breaking-news-live-streaming-graphic-1308-180321.avif" alt="City lights in New York">
           </div>
@@ -34,9 +34,12 @@ function newsCard(news) {
 
 
         `;
-
-        newsCardContainer.appendChild(cardDiv);
-    });
+    cardDiv.querySelector('.read-more-btn')
+      .addEventListener('click', () => {
+        window.location.href = `newsDetails.html?id=${item.id}`;
+      });
+    newsCardContainer.appendChild(cardDiv);
+  });
 
 }
 
