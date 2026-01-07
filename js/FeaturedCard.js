@@ -15,7 +15,7 @@ function newsCard(news) {
     cardDiv.classList.add('news-card');
     cardDiv.innerHTML = `
           <div class="news-image-wrapper">
-             <img src="https://i.ibb.co.com/WpDd6ZJV/breaking-news-live-streaming-graphic-1308-180321.avif" alt="City lights in New York">
+             <img src='${item?.thumbnail}' alt="City lights in New York">
           </div>
 
            <div class="news-body">

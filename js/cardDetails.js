@@ -19,7 +19,7 @@ const renderNewsDetails = (newsData) => {
         detailsContainer.innerHTML = `
             <div class="most-popular-news">
                 <div class="sports-img">
-                    <img src="${newsItem.image}" alt="${newsItem.title}">
+                    <img src="${newsItem.cover_image}" alt="${newsItem.title}">
                 </div>
                 <div>
                     <h1 class="playfair-display-font">${newsItem.title}</h1>
