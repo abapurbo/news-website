@@ -21,7 +21,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px 20px;
-    background-color: rgba(111, 110, 110, 0.9);
+    background-color: rgba(241, 240, 240, 0.9);
     z-index: 1000;
 
 }
@@ -34,7 +34,7 @@
 }
 
 .nav-logo {
-    color: white;
+    color: black;
     font-weight: 900;
 }
 
@@ -54,7 +54,8 @@
 .nav-menu li a {
     text-decoration: none;
     font-size: 18px;
-    color: white;
+    color: black;
+    font-weight:600;
 }
 
 /* Mobile/Tablet nav-links */
@@ -94,15 +95,15 @@
 .search-input {
     padding: 8px 10px;
     border-radius: 6px;
-    border: 1px solid rgb(172, 172, 172);
-    background-color: rgba(54, 53, 53, 0.6);
-    color: white;
+    border: 1px solid rgb(81, 80, 80);
+    background-color: rgba(167, 166, 166, 0.6);
+    color: black;
     font-weight: 500;
 
 }
 
 .search-input::placeholder {
-    color: rgb(145, 144, 144);
+    color: black;
 }
 
 .search-input:focus {
@@ -322,6 +323,7 @@
     margin-bottom: 6px;
     height:150px;
     width: 100%;
+    object-position:cover;
 }
 
 #news-card-2 {
