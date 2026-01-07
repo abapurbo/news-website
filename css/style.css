@@ -447,12 +447,10 @@
 }
 
 /* star multimedia section in sports page */
-/* ===== Star Multimedia Section ===== */
 .star-multimedia-section {
-    max-width: 1200px;
-    margin: 70px auto;
+    max-width: 1440px;
+    margin: 40px auto;
     padding: 0 20px;
-    font-family: "Georgia", serif;
 }
 
 /* Header */
